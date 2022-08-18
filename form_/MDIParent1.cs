@@ -290,6 +290,12 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 			f.MdiParent = this;
 
+			f.WindowState = FormWindowState.Normal;
+			f.Dock = DockStyle.None;
+			f.Anchor = AnchorStyles.None;
+			f.StartPosition = FormStartPosition.CenterScreen; //https://stackoverflow.com/questions/1228120/how-to-make-mdichild-load-at-the-center-of-mdiparent-window .CenterParent;
+
+			//f.Show(this); // exception. note we have already assigned Mdiparent
 			f.Show();
 
 		}
