@@ -46,7 +46,9 @@
 			this.accToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.progToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lurkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.服务器组ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.公开服务器等ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.upgradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +58,10 @@
 			this.shieldToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.moduleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.byDivToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.监控ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.lastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
 			this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,8 +71,6 @@
 			this.tileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.arrangeIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.lastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +86,7 @@
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.git地址ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
@@ -93,9 +98,9 @@
 			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sysToolStripMenuItem,
             this.bakToolStripMenuItem,
+            this.监控ToolStripMenuItem,
             this.viewMenu,
             this.windowsMenu,
-            this.logToolStripMenuItem,
             this.helpMenu});
 			this.menuStrip.MdiWindowListItem = this.windowsMenu;
 			this.menuStrip.Name = "menuStrip";
@@ -120,9 +125,10 @@
             this.pushErrAsWarnIfGeToolStripMenuItem,
             this.svrToolStripMenuItem,
             this.progToolStripMenuItem,
-            this.clientsToolStripMenuItem,
+            this.服务器组ToolStripMenuItem,
             this.toolStripSeparator3,
-            this.upgradeToolStripMenuItem});
+            this.upgradeToolStripMenuItem,
+            this.git地址ToolStripMenuItem});
 			this.cfgToolStripMenuItem.Name = "cfgToolStripMenuItem";
 			// 
 			// srcsToolStripMenuItem
@@ -209,11 +215,25 @@
 			this.lurkToolStripMenuItem.Name = "lurkToolStripMenuItem";
 			this.lurkToolStripMenuItem.Click += new System.EventHandler(this.LurkToolStripMenuItem_Click);
 			// 
+			// 服务器组ToolStripMenuItem
+			// 
+			resources.ApplyResources(this.服务器组ToolStripMenuItem, "服务器组ToolStripMenuItem");
+			this.服务器组ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientsToolStripMenuItem,
+            this.公开服务器等ToolStripMenuItem});
+			this.服务器组ToolStripMenuItem.Name = "服务器组ToolStripMenuItem";
+			// 
 			// clientsToolStripMenuItem
 			// 
 			resources.ApplyResources(this.clientsToolStripMenuItem, "clientsToolStripMenuItem");
 			this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
-			this.clientsToolStripMenuItem.Click += new System.EventHandler(this.ClientsToolStripMenuItem_Click);
+			this.clientsToolStripMenuItem.Click += new System.EventHandler(this.clientsToolStripMenuItem_Click_1);
+			// 
+			// 公开服务器等ToolStripMenuItem
+			// 
+			resources.ApplyResources(this.公开服务器等ToolStripMenuItem, "公开服务器等ToolStripMenuItem");
+			this.公开服务器等ToolStripMenuItem.Name = "公开服务器等ToolStripMenuItem";
+			this.公开服务器等ToolStripMenuItem.Click += new System.EventHandler(this.公开服务器等ToolStripMenuItem_Click_1);
 			// 
 			// toolStripSeparator3
 			// 
@@ -230,7 +250,7 @@
 			// 
 			resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
 			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+			this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1toClose_Click);
 			// 
 			// bakToolStripMenuItem
 			// 
@@ -274,6 +294,33 @@
 			resources.ApplyResources(this.byDivToolStripMenuItem, "byDivToolStripMenuItem");
 			this.byDivToolStripMenuItem.Name = "byDivToolStripMenuItem";
 			this.byDivToolStripMenuItem.Click += new System.EventHandler(this.byDivToolStripMenuItem_Click);
+			// 
+			// 监控ToolStripMenuItem
+			// 
+			resources.ApplyResources(this.监控ToolStripMenuItem, "监控ToolStripMenuItem");
+			this.监控ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logToolStripMenuItem,
+            this.toolStripMenuItem3});
+			this.监控ToolStripMenuItem.Name = "监控ToolStripMenuItem";
+			// 
+			// logToolStripMenuItem
+			// 
+			resources.ApplyResources(this.logToolStripMenuItem, "logToolStripMenuItem");
+			this.logToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lastToolStripMenuItem});
+			this.logToolStripMenuItem.Name = "logToolStripMenuItem";
+			// 
+			// lastToolStripMenuItem
+			// 
+			resources.ApplyResources(this.lastToolStripMenuItem, "lastToolStripMenuItem");
+			this.lastToolStripMenuItem.Name = "lastToolStripMenuItem";
+			this.lastToolStripMenuItem.Click += new System.EventHandler(this.lastLog_ToolStripMenuItem_Click);
+			// 
+			// toolStripMenuItem3
+			// 
+			resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
+			this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+			this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3procs_Click);
 			// 
 			// viewMenu
 			// 
@@ -341,19 +388,6 @@
 			resources.ApplyResources(this.arrangeIconsToolStripMenuItem, "arrangeIconsToolStripMenuItem");
 			this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
 			this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
-			// 
-			// logToolStripMenuItem
-			// 
-			resources.ApplyResources(this.logToolStripMenuItem, "logToolStripMenuItem");
-			this.logToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lastToolStripMenuItem});
-			this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-			// 
-			// lastToolStripMenuItem
-			// 
-			resources.ApplyResources(this.lastToolStripMenuItem, "lastToolStripMenuItem");
-			this.lastToolStripMenuItem.Name = "lastToolStripMenuItem";
-			this.lastToolStripMenuItem.Click += new System.EventHandler(this.LastToolStripMenuItem_Click);
 			// 
 			// helpMenu
 			// 
@@ -450,6 +484,12 @@
 			resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
 			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
 			// 
+			// git地址ToolStripMenuItem
+			// 
+			resources.ApplyResources(this.git地址ToolStripMenuItem, "git地址ToolStripMenuItem");
+			this.git地址ToolStripMenuItem.Name = "git地址ToolStripMenuItem";
+			this.git地址ToolStripMenuItem.Click += new System.EventHandler(this.git地址ToolStripMenuItem_Click);
+			// 
 			// MDIParent1
 			// 
 			resources.ApplyResources(this, "$this");
@@ -513,20 +553,25 @@
 		private System.Windows.Forms.ToolStripMenuItem bakToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem byDivToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem semaphoreToolStripMenuItem1;
-		private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem lastToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem pushErrAsWarnIfGeToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem svrToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem vsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem progToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem lurkToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem vs1ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem accToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem srcsToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.ToolStripMenuItem upgradeToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 监控ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem lastToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+		private System.Windows.Forms.ToolStripMenuItem 服务器组ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 公开服务器等ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem git地址ToolStripMenuItem;
 	}
 }
 

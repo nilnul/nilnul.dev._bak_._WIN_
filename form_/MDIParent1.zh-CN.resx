@@ -160,6 +160,12 @@
   <data name="pushErrAsWarnIfGeToolStripMenuItem.Text" xml:space="preserve">
     <value>至少推送成功几个</value>
   </data>
+  <data name="vsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="vs1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="svrToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 22</value>
   </data>
@@ -180,16 +186,31 @@
     <value>外部程序</value>
   </data>
   <data name="clientsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
+    <value>112, 22</value>
   </data>
   <data name="clientsToolStripMenuItem.Text" xml:space="preserve">
-    <value>版本控制服务器等</value>
+    <value>个人用</value>
+  </data>
+  <data name="公开服务器等ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="公开服务器等ToolStripMenuItem.Text" xml:space="preserve">
+    <value>公开</value>
+  </data>
+  <data name="服务器组ToolStripMenuItem.Text" xml:space="preserve">
+    <value>服务器组</value>
   </data>
   <data name="upgradeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 22</value>
   </data>
   <data name="upgradeToolStripMenuItem.Text" xml:space="preserve">
     <value>升级</value>
+  </data>
+  <data name="git地址ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="git地址ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Git地址</value>
   </data>
   <data name="cfgToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -245,6 +266,24 @@
   <data name="bakToolStripMenuItem.Text" xml:space="preserve">
     <value>备份</value>
   </data>
+  <data name="lastToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="lastToolStripMenuItem.Text" xml:space="preserve">
+    <value>最后错误</value>
+  </data>
+  <data name="logToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="logToolStripMenuItem.Text" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>进程</value>
+  </data>
+  <data name="监控ToolStripMenuItem.Text" xml:space="preserve">
+    <value>诊断</value>
+  </data>
   <data name="toolBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 22</value>
   </data>
@@ -283,18 +322,6 @@
   </data>
   <data name="windowsMenu.Text" xml:space="preserve">
     <value>窗口(&amp;w</value>
-  </data>
-  <data name="lastToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="lastToolStripMenuItem.Text" xml:space="preserve">
-    <value>最后错误</value>
-  </data>
-  <data name="logToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="logToolStripMenuItem.Text" xml:space="preserve">
-    <value>日志</value>
   </data>
   <data name="toolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 6</value>

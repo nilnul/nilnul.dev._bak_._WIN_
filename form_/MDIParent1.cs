@@ -20,6 +20,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		public MDIParent1()
 		{
 			InitializeComponent();
+			procMngers.MdiParent = this;
 
 			//moduleBakForm.FormClosed += ModuleBakForm_FormClosed;
 			//moduleBakForm.MdiParent = this;
@@ -131,7 +132,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void moduleToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 		}
-	
+
 		//[Obsolete()]
 		//private void shieldToolStripMenuItem_Click(object sender, EventArgs e)
 		//{
@@ -190,7 +191,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void shieldsToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
 
-			_CTR_.ctr_.bak_.shields.form_.NoMenu shieldsBakForm = new _CTR_.ctr_.bak_.shields.form_.NoMenu() { Dock=DockStyle.Fill};
+			_CTR_.ctr_.bak_.shields.form_.NoMenu shieldsBakForm = new _CTR_.ctr_.bak_.shields.form_.NoMenu() { Dock = DockStyle.Fill };
 
 			shieldsBakForm.finished += ShieldsBakForm_finished;
 			shieldsBakForm.Text = "Shieds Bak";// + childFormNumber++;
@@ -208,7 +209,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void cfgSrcsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			//nilnul.dev._bak_._WIN_.ctr_._cfg_.srcs.Form1 cfg_srcs = new ctr_._cfg_.srcs.Form1();
-            var cfg_srcs = new
+			var cfg_srcs = new
 				nilnul._dev_._CTR4WIN_.srcs.ok.Form_disjoint
 
 				//nilnul._dev_._CTR4WIN_.srcs.ok.Form1
@@ -216,9 +217,9 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 
 			cfg_srcs.Text = "srcs";
-			
+
 			cfg_srcs.MdiParent = this;
-			
+
 			cfg_srcs.Show();
 			cfg_srcs.WindowState = FormWindowState.Maximized;
 
@@ -242,7 +243,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		}
 
-	
+
 
 		private void bakedToolStripMenuItem_Click(object sender, EventArgs e)
 		{
@@ -264,7 +265,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 			f.MdiParent = this;
 			f.Show();
 
-			
+
 
 		}
 
@@ -352,7 +353,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 			var f = new Form();
 			f.MdiParent = this;
 			f.Controls.Add(
-				new _CTR_.ctr_._cfg_.sema._cfg__sema_Save(){ Dock = DockStyle.Fill }
+				new _CTR_.ctr_._cfg_.sema._cfg__sema_Save() { Dock = DockStyle.Fill }
 			);
 
 			f.WindowState = FormWindowState.Maximized;
@@ -362,12 +363,12 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		}
 
-		private void LastToolStripMenuItem_Click(object sender, EventArgs e)
+		private void lastLog_ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			var filename = nilnul.app.trace.listener_.file_.templatedName_.BlockQuoted.Instances.LastOrDefault();
-			if (filename!=default)
+			if (filename != default)
 			{
-				var spear=nilnul.fs.address_.spear_.ParentDoc.Create_ofContainerAsAddress(
+				var spear = nilnul.fs.address_.spear_.ParentDoc.Create_ofContainerAsAddress(
 					Application.StartupPath
 					,
 					filename.filename
@@ -381,7 +382,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		{
 			var f = new Form();
 			f.Controls.Add(
-				new _CTR_.ctr_._cfg_.pushErrAs._cfg__pushErrAs_Save(){ Dock = DockStyle.Fill }
+				new _CTR_.ctr_._cfg_.pushErrAs._cfg__pushErrAs_Save() { Dock = DockStyle.Fill }
 			);
 
 			f.MdiParent = this;
@@ -393,7 +394,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		private void VsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			var f = new nilnul.fs._git_._WIN_CTR_.svr_._vs_._ok_.Form1(){ Dock = DockStyle.Fill }
+			var f = new nilnul.fs._git_._WIN_CTR_.svr_._vs_._ok_.Form1() { Dock = DockStyle.Fill }
 			;
 			f.WindowState = FormWindowState.Maximized;
 			f.MdiParent = this;
@@ -413,12 +414,6 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		}
 
-		private void ClientsToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			var f = new nilnul.fs._git_._WIN_CTR_.svr.client.titleds.ok.Form1() { Dock = DockStyle.Fill };
-			f.MdiParent = this;
-			f.Show();
-		}
 
 		private void accToolStripMenuItem_Click(object sender, EventArgs e)
 		{
@@ -446,9 +441,9 @@ namespace nilnul.dev._bak_._WIN_.form_
 		}
 
 
-		private void toolStripMenuItem1_Click(object sender, EventArgs e)
+		private void toolStripMenuItem1toClose_Click(object sender, EventArgs e)
 		{
-			this.ExitToolsStripMenuItem_Click(sender,e);
+			this.ExitToolsStripMenuItem_Click(sender, e);
 		}
 
 		private void UpgradeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -472,6 +467,46 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void upgradeToolStripMenuItem_Click_1(object sender, EventArgs e)
 		{
 			UpgradeToolStripMenuItem_Click(sender, e);
+		}
+
+		_win_._CTR4WIN_.proc.mngers.ProcessesForm procMngers = nilnul._win_._CTR4WIN_.proc.mngers.FormX.ProcMangerEs;
+		private void toolStripMenuItem3procs_Click(object sender, EventArgs e)
+		{
+			_win_._CTR4WIN_.proc.mngers.ProcessesForm f = procMngers;
+			f.FormClosing += procMngerEs_FormClosing;
+			//f.MdiParent = this;
+			f.Show();
+		}
+
+		private void procMngerEs_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			e.Cancel = true;
+			procMngers.Hide();
+		}
+
+		private void 公开服务器等ToolStripMenuItem_Click_1(object sender, EventArgs e)
+		{
+
+		
+			var f = new nilnul.fs._git_._WIN_CTR_.svr.client.repo.names_.dict_.pub.feed.ok.Form1() { Dock = DockStyle.Fill };
+			f.MdiParent = this;
+			f.Show();
+
+
+		}
+
+		private void clientsToolStripMenuItem_Click_1(object sender, EventArgs e)
+		{
+
+		
+			var f = new nilnul.fs._git_._WIN_CTR_.svr.client.titleds.ok.Form1() { Dock = DockStyle.Fill };
+			f.MdiParent = this;
+			f.Show();
+		}
+
+		private void git地址ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
