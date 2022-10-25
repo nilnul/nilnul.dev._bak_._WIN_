@@ -1,8 +1,10 @@
-零空云备份
+Nilnul Bak 
 
-#### 介绍
-零空云备份 软件。可以将您的文件自动建库，推送到若干服务器上。
 
-#### 使用说明
-参见：
+Automatically backup your work and push into git servers. It can even automatically create repo for you if hinted.
+
+#### Manual
+Please visit：
 http://nilnul.com/app_/nilnul._dev_._bak_.WIN._MAN_/
+
+Currently the above is in Chinese; use browser to translate it. The English version is on the way.

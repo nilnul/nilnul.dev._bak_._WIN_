@@ -281,7 +281,7 @@
       <HintPath>..\..\(packages)\nilnul.dev._src_._LIB_.1.1.221024.153002\lib\net481\nilnul.dev._src_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul.fs._git_._LIB_, Version=2.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
-      <HintPath>..\..\(packages)\nilnul.fs._git_._LIB_.2.1.221025.114251\lib\net481\nilnul.fs._git_._LIB_.dll</HintPath>
+      <HintPath>..\..\(packages)\nilnul.fs._git_._LIB_.2.1.221025.141907\lib\net481\nilnul.fs._git_._LIB_.dll</HintPath>
     </Reference>
     <Reference Include="nilnul.fs._git_._WIN_CTR_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
       <HintPath>packages\nilnul.fs._git_._WIN_CTR_.1.1.220830.121326\lib\net481\nilnul.fs._git_._WIN_CTR_.dll</HintPath>
