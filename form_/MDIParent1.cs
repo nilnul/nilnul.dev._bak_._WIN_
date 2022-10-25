@@ -506,6 +506,17 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		private void git地址ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			//var f =new nilnul.fs.git.
+		}
+
+		private void 无新增也推送ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			var f = new dev._bak_._CTR_._cfg_.push4nonchange.Form1();
+			f.MdiParent = this;
+			
+
+			//f.WindowState = FormWindowState.Maximized;
+			f.Show();
 
 		}
 	}
