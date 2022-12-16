@@ -5,7 +5,7 @@ Automatically bak (backup) your local repos to a collection of remote servers, s
 
 
 It can
-- automatically name your repo if you follow a specified structure; so can just put your repo in a certain location, and this software can handle the rest for you (you even don't need to init it!);
+- automatically name your repo if you follow a specified structure; so you can just put your repo in a certain location, and this software can handle the rest for you (you even don't need to init it!);
 - create corresponding repo on the server;
 - create a bak branch in your local repo to keep your work-in-process before pushing it to the servers;
 - push also other branches;
