@@ -33,3 +33,11 @@ Currently there is a user manual in Chinese:
 http://nilnul.com/app_/nilnul._dev_._bak_.WIN._MAN_/
 
 You can use browser to translate it. The English version is on the way.
+
+## Licensing
+Free for personal noncommercial use.
+For commercial use, the initial 6 months are free, and $10 per core per year afterwards.
+
+Commercial use means:
+- it is installed on a computer owned by an organization, not a person;
+- or it's used as part of or in the process of a commoditiy/service that is for sale;
