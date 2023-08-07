@@ -1,9 +1,9 @@
-# nilnul.dev.\_bak\_.\_WIN\_
-## also known as: Nilnul Bak 
+# nilnul bak
+(codename: nilnul.dev.\_bak\_.\_WIN\_)
 
 Automatically bak (backup) your local repos to a collection of remote servers, such that you files would never get lost;
 
-
+## key features
 It can
 - automatically name your repo if you follow a specified structure; so you can just put your repo in a certain location, and this software can handle the rest for you (you even don't need to init it!);
 - create corresponding repo on the server;
@@ -11,6 +11,7 @@ It can
 - push also other branches;
 - push some branches you named as `pub-*` to the pub servers as you configurated; this is useful if some repo is open source one;
 
+## development
 This currently targets dotnet framework 4.8.1; 
 
 To develop this:
@@ -19,6 +20,7 @@ To develop this:
 - other dependencies shall be automatically restored when you build;
 - now you can run;
 
+## run
 To run this, you need some configurations:
 - configure a collection of disjoint folders as srcs; under each src, every repo is named after its relative path to the path;
 - configure a collection of remote servers; we now support github, gitlab, azure, amazon; 
@@ -28,7 +30,7 @@ To run this, you need some configurations:
 This software is currently in preview; if you have any question, open an issue;
 
 
-#### Manual
+### Manual
 Currently there is a user manual in Chinese:
 http://nilnul.com/app_/nilnul._dev_._bak_.WIN._MAN_/
 
