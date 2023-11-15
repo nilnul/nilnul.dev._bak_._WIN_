@@ -22,7 +22,7 @@ To develop this:
 
 ## run
 To run this, you need some configurations:
-- configure a collection of disjoint folders as srcs; under each src, every repo is named after its relative path to the path;
+- configure a collection of disjoint folders as srcs; under each src, every repo is named after its relative path to the src;
 - configure a collection of remote servers; we now support github, gitlab, azure, amazon; 
   For some regions in east asia, github connection is not stable, so it's defaulted to ssh for pushing; for other regions, the connection can be, in our plan, defaulted to https;
 - click menu "Bak -> Folders -> Srcs", your configurated srcs shall appear there; click start to begin the bakking process;
