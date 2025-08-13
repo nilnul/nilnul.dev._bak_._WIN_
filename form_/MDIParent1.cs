@@ -183,7 +183,8 @@ namespace nilnul.dev._bak_._WIN_.form_
 
 		//}
 
-		public void flash() {
+		public void flash()
+		{
 			_this._BlinkFormX.FlashWindow(this.Handle, false);
 
 		}
@@ -470,10 +471,25 @@ namespace nilnul.dev._bak_._WIN_.form_
 		}
 
 		_win_._CTR4WIN_.proc.mngers.ProcessesForm procMngers = nilnul._win_._CTR4WIN_.proc.mngers.FormX.ProcMangerEs;
+		bool procMngerClosingHooked = false;
+		object _procMngerClosingHooked_lock = new object();
 		private void toolStripMenuItem3procs_Click(object sender, EventArgs e)
 		{
 			_win_._CTR4WIN_.proc.mngers.ProcessesForm f = procMngers;
-			f.FormClosing += procMngerEs_FormClosing;
+			if (!procMngerClosingHooked)
+			{
+
+				lock (_procMngerClosingHooked_lock)
+				{
+					if (!procMngerClosingHooked)
+					{
+						f.FormClosing += procMngerEs_FormClosing;
+						procMngerClosingHooked = true;
+					}
+
+				}
+			}
+
 			//f.MdiParent = this;
 			f.Show();
 		}
@@ -487,7 +503,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void 公开服务器等ToolStripMenuItem_Click_1(object sender, EventArgs e)
 		{
 
-		
+
 			var f = new nilnul.fs._git_._WIN_CTR_.svr.client.repo.names_.dict_.pub.feed.ok.Form1() { Dock = DockStyle.Fill };
 			f.MdiParent = this;
 			f.Show();
@@ -498,7 +514,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		private void clientsToolStripMenuItem_Click_1(object sender, EventArgs e)
 		{
 
-		
+
 			var f = new nilnul.fs._git_._WIN_CTR_.svr.client.titleds.ok.Form1() { Dock = DockStyle.Fill };
 			f.MdiParent = this;
 			f.Show();
@@ -513,7 +529,7 @@ namespace nilnul.dev._bak_._WIN_.form_
 		{
 			var f = new dev._bak_._CTR_._cfg_.push4nonchange.Form1();
 			f.MdiParent = this;
-			
+
 
 			//f.WindowState = FormWindowState.Maximized;
 			f.Show();

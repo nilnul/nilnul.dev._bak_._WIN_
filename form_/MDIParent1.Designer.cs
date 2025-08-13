@@ -39,6 +39,7 @@
             this.bakedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modulesBakedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.semaphoreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.无新增也推送ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pushErrAsWarnIfGeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.svrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.upgradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.git地址ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.无新增也推送ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shieldsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -171,6 +171,12 @@
             this.semaphoreToolStripMenuItem1.Name = "semaphoreToolStripMenuItem1";
             this.semaphoreToolStripMenuItem1.Click += new System.EventHandler(this.SemaphoreToolStripMenuItem1_Click);
             // 
+            // 无新增也推送ToolStripMenuItem
+            // 
+            resources.ApplyResources(this.无新增也推送ToolStripMenuItem, "无新增也推送ToolStripMenuItem");
+            this.无新增也推送ToolStripMenuItem.Name = "无新增也推送ToolStripMenuItem";
+            this.无新增也推送ToolStripMenuItem.Click += new System.EventHandler(this.无新增也推送ToolStripMenuItem_Click);
+            // 
             // pushErrAsWarnIfGeToolStripMenuItem
             // 
             resources.ApplyResources(this.pushErrAsWarnIfGeToolStripMenuItem, "pushErrAsWarnIfGeToolStripMenuItem");
@@ -253,12 +259,6 @@
             resources.ApplyResources(this.git地址ToolStripMenuItem, "git地址ToolStripMenuItem");
             this.git地址ToolStripMenuItem.Name = "git地址ToolStripMenuItem";
             this.git地址ToolStripMenuItem.Click += new System.EventHandler(this.git地址ToolStripMenuItem_Click);
-            // 
-            // 无新增也推送ToolStripMenuItem
-            // 
-            resources.ApplyResources(this.无新增也推送ToolStripMenuItem, "无新增也推送ToolStripMenuItem");
-            this.无新增也推送ToolStripMenuItem.Name = "无新增也推送ToolStripMenuItem";
-            this.无新增也推送ToolStripMenuItem.Click += new System.EventHandler(this.无新增也推送ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
